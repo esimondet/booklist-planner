@@ -2,13 +2,11 @@
 
 ## Description
 
-This MERN stack application uses GraphQL to
+This MERN stack application uses GraphQL to store stored books from the Googlebooks API.
 
 ## Deployment
 
-To view the live deployment, [CLICK HERE]().
-
-[Fullpage Screenshot]()
+To view the live deployment, [CLICK HERE](https://booklist-planner.herokuapp.com/).
 
 ## Questions
 
