@@ -16,6 +16,7 @@ import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 import { REMOVE_BOOK } from '../utils/mutations';
+import { GET_ME } from '../utils/queries';
 
 const SavedBooks = () => {
   const [userData, setUserData] = useState({});
@@ -27,11 +28,9 @@ const SavedBooks = () => {
   // TODO: Use the useMutation() Hook to execute the REMOVE_BOOK mutation in
   // the handleDeleteBook() function instead of the deleteBook(function thats imported
   // from the API file). Keep the removeBookID() function
-
+  const [removeBook] = useMutation(REMOVE_BOOK);
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
-    const [removeBook] = useMutation(REMOVE_BOOK);
-
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     if (!token) {
