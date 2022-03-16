@@ -8,6 +8,8 @@ This MERN stack application uses GraphQL to store stored books from the Googlebo
 
 To view the live deployment, [CLICK HERE](https://booklist-planner.herokuapp.com/).
 
+![Full Page Screenshot](./client/public/full-page-screenshot.png)
+
 ## Questions
 
 Please direct questions to my github at [esimondet](https://github.com/esimondet)
