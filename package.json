@@ -4,11 +4,11 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "cd server && npm run",
+    "start": "cd client && npm install && npm run",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install && npm start"
+    "heroku-postbuild": "cd client && npm install && npm run"
   },
   "keywords": [],
   "author": "",
